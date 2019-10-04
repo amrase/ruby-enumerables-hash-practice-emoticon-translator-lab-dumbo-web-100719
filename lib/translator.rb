@@ -5,7 +5,7 @@ require 'pry'
 
 def load_library(file_path)
   # code goes here
-  file=FILE.read(file_path)
+  file=File.read(file_path)
   emoticons = YAML.load(file)
 end
 
