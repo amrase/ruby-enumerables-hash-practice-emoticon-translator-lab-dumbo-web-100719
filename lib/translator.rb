@@ -29,10 +29,8 @@ end
 
 def get_english_meaning(file_path="./lab/emoticons.yml",emoticon)
   # code goes here
-  library = load_library(file_path)
-  if library["get_emoticon"].include?(emoticon) 
-    library["get_emoticon"][emoticon]
-  else
-    "Sorry, that emoticon was not found"
+  emoticons = load_library(file_path)
+  emoji = emoticons.find {|name, faces| faces[1] == emoticon }
+  emoji == nil ? "Sorry, that emoticon was not found" : emoji[0]
   end
 end
