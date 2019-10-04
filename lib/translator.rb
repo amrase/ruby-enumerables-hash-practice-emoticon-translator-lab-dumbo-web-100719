@@ -5,7 +5,7 @@ def load_library
   # code goes here
   
   
-  hash
+  
 end
 
 def get_japanese_emoticon
