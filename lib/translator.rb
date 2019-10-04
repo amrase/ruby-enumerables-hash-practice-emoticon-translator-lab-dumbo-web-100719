@@ -19,8 +19,8 @@ end
 
 def get_japanese_emoticon(file_path,emoticon)
   # code goes here
-  emoticon = File.read(file_path)
-  
+  library = File.read(file_path)
+  if library.include(emoticon)
 end
 
 def get_english_meaning
