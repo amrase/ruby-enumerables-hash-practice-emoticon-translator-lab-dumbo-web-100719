@@ -19,9 +19,12 @@ end
 
 def get_japanese_emoticon(file_path="./lab/emoticons.yml",emoticon)
   # code goes here
-  library = File.read(file_path)
-  emoji= library.values.find {|faces| faces[0] == emoticon}
-  emoji == nil "Sorry, that emoji was not found!" : emoji[1]
+  library = load_library(file_path)
+  if library["get_emoticon"].include?(english_emoticon) 
+    library["get_emoticon"][english_emoticon]
+  else
+    "Sorry, that emoticon was not found"
+  end
 end
 
 def get_english_meaning
