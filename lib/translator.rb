@@ -7,6 +7,8 @@ def load_library(file_path)
   # code goes here
   file=File.read(file_path)
   emoticons = YAML.load(file)
+  
+  library = {'get_english_meaning' = {},''
 end
 
 def get_japanese_emoticon
