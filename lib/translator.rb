@@ -4,7 +4,7 @@ require 'yaml'
 
 def load_library
   # code goes here
-  emojis = 
+  emojis = "YAML".load_file()
   
   
   
