@@ -21,6 +21,7 @@ def get_japanese_emoticon(file_path,emoticon)
   # code goes here
   library = File.read(file_path)
   emoji= library.values.find {|faces| faces[0] == emoticon}
+  emoji == nil 
 end
 
 def get_english_meaning
