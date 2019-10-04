@@ -17,9 +17,10 @@ def load_library(file_path)
   result
 end
 
-def get_japanese_emoticon
+def get_japanese_emoticon(file_path,emoticon)
   # code goes here
-  emoticon = file
+  emoticon = File.read(file_path)
+  emoji.each do ||
 end
 
 def get_english_meaning
