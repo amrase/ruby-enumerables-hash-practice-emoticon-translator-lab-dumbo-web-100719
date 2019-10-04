@@ -11,6 +11,8 @@ def load_library
     'get_emoticon' => {}
   }
   emoji.each do |meaning,value|
+    english = value[0]
+    japanese = value[1]
     
   end
   
