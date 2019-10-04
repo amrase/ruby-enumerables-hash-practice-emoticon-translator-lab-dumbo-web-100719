@@ -20,7 +20,7 @@ end
 def get_japanese_emoticon(file_path,emoticon)
   # code goes here
   emoticon = File.read(file_path)
-  emoji.each do ||
+  emoticon.values.find ()
 end
 
 def get_english_meaning
