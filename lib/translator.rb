@@ -6,11 +6,12 @@ require 'pry'
 def load_library(file_path)
   # code goes here
   file=File.read(file_path)
-  emoticons = YAML.load(file)
+  library= YAML.load(file)
   
-  library = {'get_meaning' => {} , 'get_emoticon' => {}}
+  result = {'get_meaning' => {} , 'get_emoticon' => {}}
   library.each do |meaning,emoticons|
     result['get_meaning'][emoticons[1]] = meaning
+    result['get_emoticon'][emoticons[0]] = 
   
   end
 end
