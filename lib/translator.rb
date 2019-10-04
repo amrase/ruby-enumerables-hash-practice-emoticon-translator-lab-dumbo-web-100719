@@ -9,7 +9,10 @@ def load_library(file_path)
   emoticons = YAML.load(file)
   
   library = {'get_meaning' => {} , 'get_emoticon' => {}}
+  librart.each do |meaning,value|
   
+  
+  end
 end
 
 def get_japanese_emoticon
