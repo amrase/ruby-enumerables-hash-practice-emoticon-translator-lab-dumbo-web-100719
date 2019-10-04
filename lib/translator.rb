@@ -14,7 +14,7 @@ def load_library
     english = value[0]
     japanese = value[1]
     emoji_lib['get_meaning'][japanese]=meaning
-    emoji_lib[]
+    emoji_lib['get_emoticon'][english]=meaning
   end
   
 end
