@@ -10,8 +10,9 @@ def load_library
     'get_meaning' => {},
     'get_emoticon' => {}
   }
-  emoji.each do ||
-  
+  emoji.each do |meaning,value|
+    
+  end
   
 end
 
